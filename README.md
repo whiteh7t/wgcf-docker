@@ -12,7 +12,7 @@ docker run --rm -it \
     --privileged --cap-add net_admin \
     -v /lib/modules:/lib/modules \
     -v $(pwd)/wgcf:/wgcf \
-    neilpang/wgcf-docker
+    whiteh7t/wgcf-docker
 
 
 
@@ -29,7 +29,7 @@ docker run --rm -it \
     --privileged --cap-add net_admin \
     -v /lib/modules:/lib/modules \
     -v $(pwd)/wgcf:/wgcf \
-    neilpang/wgcf-docker  -4 
+    whiteh7t/wgcf-docker  -4 
 
 
 
@@ -43,7 +43,7 @@ docker run --rm -it \
     --privileged --cap-add net_admin \
     -v /lib/modules:/lib/modules \
     -v $(pwd)/wgcf:/wgcf \
-    neilpang/wgcf-docker  -6 
+    whiteh7t/wgcf-docker  -6 
 
 
 
@@ -58,7 +58,7 @@ docker run --rm -it \
     --privileged --cap-add net_admin \
     -v /lib/modules:/lib/modules \
     -v $(pwd)/wgcf:/wgcf \
-    neilpang/wgcf-docker:alpine
+    whiteh7t/wgcf-docker:alpine
 
 
 
@@ -76,7 +76,7 @@ docker run --rm -it \
     --privileged --cap-add net_admin \
     -v /lib/modules:/lib/modules \
     -v $(pwd)/wgcf:/wgcf \
-    neilpang/wgcf-docker:alpine  -4
+    whiteh7t/wgcf-docker:alpine  -4
 
 
 
@@ -89,7 +89,7 @@ docker run --rm -it \
     --privileged --cap-add net_admin \
     -v /lib/modules:/lib/modules \
     -v $(pwd)/wgcf:/wgcf \
-    neilpang/wgcf-docker:alpine  -6
+    whiteh7t/wgcf-docker:alpine  -6
 
 
 
@@ -117,7 +117,7 @@ Enable both ipv4 and ipv6 by default:
 version: "2.4"
 services:
   wgcf:
-    image: neilpang/wgcf-docker:latest
+    image: whiteh7t/wgcf-docker:latest
     volumes:
       - ./wgcf:/wgcf
       - /lib/modules:/lib/modules
@@ -143,7 +143,7 @@ Enable ipv6 only:
 version: "2.4"
 services:
   wgcf:
-    image: neilpang/wgcf-docker:latest
+    image: whiteh7t/wgcf-docker:latest
     volumes:
       - ./wgcf:/wgcf
       - /lib/modules:/lib/modules
@@ -173,7 +173,7 @@ Enable ipv4 only:
 version: "2.4"
 services:
   wgcf:
-    image: neilpang/wgcf-docker:latest
+    image: whiteh7t/wgcf-docker:latest
     volumes:
       - ./wgcf:/wgcf
       - /lib/modules:/lib/modules
@@ -207,7 +207,7 @@ Enable both ipv4 and ipv6 by default:
 version: "2.4"
 services:
   wgcf:
-    image: neilpang/wgcf-docker:alpine
+    image: whiteh7t/wgcf-docker:alpine
     volumes:
       - ./wgcf:/wgcf
       - /lib/modules:/lib/modules
@@ -239,7 +239,7 @@ Enable ipv6 only:
 version: "2.4"
 services:
   wgcf:
-    image: neilpang/wgcf-docker:alpine
+    image: whiteh7t/wgcf-docker:alpine
     volumes:
       - ./wgcf:/wgcf
       - /lib/modules:/lib/modules
@@ -270,7 +270,7 @@ Enable ipv4 only:
 version: "2.4"
 services:
   wgcf:
-    image: neilpang/wgcf-docker:alpine
+    image: whiteh7t/wgcf-docker:alpine
     volumes:
       - ./wgcf:/wgcf
       - /lib/modules:/lib/modules

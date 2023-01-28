@@ -20,7 +20,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: neilpang/wgcf-docker
+          images: whiteh7t/wgcf-docker
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
@@ -63,7 +63,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: neilpang/wgcf-docker
+          images: whiteh7t/wgcf-docker
           tags: |
             type=semver,suffix=-alpine,pattern={{version}}
             type=semver,suffix=-alpine,pattern={{major}}.{{minor}}
